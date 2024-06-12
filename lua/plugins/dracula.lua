@@ -1,0 +1,1 @@
+/home/jkyon/.config/nvim.bak/lua/plugins/dracula.lua
