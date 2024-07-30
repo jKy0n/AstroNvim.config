@@ -18,4 +18,8 @@ end
 require "lazy_setup"
 require "polish"
 
+-- Added this line to our initial lazy-config.lua file (Remove this comment if you want to)
+
+vim.cmd.colorscheme "catppuccin-macchiato"
+
 vim.wo.relativenumber = false
