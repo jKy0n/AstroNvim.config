@@ -24,7 +24,6 @@ require "polish"
 
 
 
-
 vim.cmd.colorscheme "catppuccin-macchiato"
 
 vim.wo.relativenumber = false
