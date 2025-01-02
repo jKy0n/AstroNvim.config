@@ -21,8 +21,11 @@ require "polish"
 -- Added this line to our initial lazy-config.lua file (Remove this comment if you want to)
 
 
+-- Set default shell
+vim.opt.shell = "/usr/bin/zsh"
 
+-- Set colorscheme
+vim.cmd.colorscheme("catppuccin-macchiato")
 
-vim.cmd.colorscheme "catppuccin-macchiato"
-
-vim.wo.relativenumber = false
+-- Disable relative number globally
+vim.opt.relativenumber = false
