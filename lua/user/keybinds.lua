@@ -16,3 +16,6 @@ map('n', '<A-Down>', '<C-w>-', opts)  -- Reduzir altura do painel
 -- Home e End no modo de inserção
 map('i', '<Home>', '<C-o>^', opts) -- Vai para o início da linha
 map('i', '<End>', '<C-o>$', opts)  -- Vai para o final da linha
+
+-- Mapear Alt + u para redo
+map('n', '<A-u>', '<C-r>', opts)
