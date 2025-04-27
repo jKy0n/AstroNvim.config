@@ -26,15 +26,10 @@ vim.keymap.set('n', '<A-u>', '<C-r>', opts)
 -- Apagar linha no Normal Mode
 vim.keymap.set("n", "<S-Del>", "dd", { desc = "Delete line (Shift+Del)" })
 
--- Define atalho para o terminal (ToggleTerm)
--- vim.keymap.set("n", "<F4>", ":ToggleTerm<CR>", { noremap = true, silent = true })
-
--- Apagar linha no Insert Mode
-vim.keymap.set("i", "<S-Del>", function()
-  vim.cmd("stopinsert")
-  vim.cmd("normal! 0dd")
-  vim.cmd("startinsert")
-end, { desc = "Delete line (Shift+Del) [insert mode]" })
+-- Apagar linha no Insert Mode (Shift+Del)
+vim.keymap.set("i", "<Esc>[99~", function()
+  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>0ddi", true, false, true), "n", true)
+end, { noremap = true, silent = true, desc = "Delete entire line (Shift+Del insert mode)" })
 
 -- Which-key: Atalhos Rápidos
 local which_key = require("which-key")
