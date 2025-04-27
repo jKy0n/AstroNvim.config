@@ -1,14 +1,12 @@
-# AstroNvim Template
+# ⌨️ jKyon AstroNvim configuration ⚙️
 
 ![face](https://github.com/jKy0n/AstroNvim.config/blob/main/media/2025-04-27_03-39.png)
 
-**NOTE:** This is for AstroNvim v4+
-
-A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+**NOTE:** This is for [AstroNvim](https://github.com/AstroNvim/AstroNvim)  v4+
 
 ## 🛠️ Installation
 
-#### Make a backup of your current nvim and shared folder
+#### 1. Make a backup of your current nvim and shared folder first
 
 ```shell
 mv ~/.config/nvim ~/.config/nvim.bak
@@ -17,21 +15,26 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
 
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
+#### 2. Clone the repository
 
 ```shell
 git clone https://github.com/jKy0n/AstroNvim.config.git ~/.config/nvim # HTTPS
+# or
 git clone git@github.com:jKy0n/AstroNvim.config.git ~/.config/nvim     # SSH (Recommended)
 ```
 
-#### Start Neovim
+#### 3. Start Neovim
 
 ```shell
 nvim
 ```
+
+#### 4. Manage plugins
+
+Run `:Lazy check` to check for plugin updates
+Run `:Lazy update` to apply any pending plugin updates
+Run `:Lazy clean` to remove any disabled or unused plugins
+Run `:Lazy sync` to update and clean plugins
+
+
+And it's done, enjoy! =)
