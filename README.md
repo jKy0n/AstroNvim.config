@@ -31,10 +31,12 @@ nvim
 
 #### 4. Manage plugins
 
-Run `:Lazy check` to check for plugin updates
-Run `:Lazy update` to apply any pending plugin updates
-Run `:Lazy clean` to remove any disabled or unused plugins
-Run `:Lazy sync` to update and clean plugins
-
+In nvim type:
+```
+:Lazy check     # to check for plugin updates.
+:Lazy update    # to apply any pending plugin updates
+:Lazy clean     # to remove any disabled or unused plugins
+:Lazy sync      # to update and clean plugins
+```
 
 And it's done, enjoy! =)
