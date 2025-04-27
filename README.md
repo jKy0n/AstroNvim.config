@@ -1,5 +1,7 @@
 # AstroNvim Template
 
+![face](https://github.com/jKy0n/AstroNvim.config/blob/main/media/2025-04-27_03-39.png)
+
 **NOTE:** This is for AstroNvim v4+
 
 A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
