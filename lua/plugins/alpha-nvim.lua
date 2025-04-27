@@ -44,16 +44,16 @@ return {
       -- Botões (placeholders, podemos personalizar mais depois)
       local alpha = require("alpha.themes.dashboard")
       opts.section.buttons.val = {
-        alpha.button("n", "  Novo Arquivo", ":ene <BAR> startinsert <CR>"),
-        alpha.button("f", "󰈞  Buscar Arquivo", ":Telescope find_files<CR>"),
-        alpha.button("p", "  Projetos", ":Telescope projects<CR>"),
-        alpha.button("r", "  Arquivos Recentes", ":Telescope oldfiles<CR>"),
-        alpha.button("s", "  Salvar Sessão", ":SessionManager save_current_session<CR>"),
-        alpha.button("q", "  Sair", ":qa<CR>"),
+        alpha.button("n", "  New File", ":ene <BAR> startinsert <CR>"),
+        alpha.button("f", "󰈞  Find File", ":Telescope find_files<CR>"),
+        alpha.button("p", "  Projects", ":Telescope projects<CR>"),
+        alpha.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
+        alpha.button("s", "  Save Session", ":SessionManager save_current_session<CR>"),
+        alpha.button("q", "  Quit", ":qa<CR>"),
       }
 
       -- Footer (mensagem simples)
-      opts.section.footer.val = { "🚀 AstroNvim configurado por jKyon" }
+      opts.section.footer.val = { "🚀 AstroNvim customized by jKyon" }
 
       return opts
     end,
