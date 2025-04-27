@@ -26,6 +26,9 @@ vim.keymap.set('n', '<A-u>', '<C-r>', opts)
 -- Apagar linha no Normal Mode
 vim.keymap.set("n", "<S-Del>", "dd", { desc = "Delete line (Shift+Del)" })
 
+-- Define atalho para o terminal (ToggleTerm)
+-- vim.keymap.set("n", "<F4>", ":ToggleTerm<CR>", { noremap = true, silent = true })
+
 -- Apagar linha no Insert Mode
 vim.keymap.set("i", "<S-Del>", function()
   vim.cmd("stopinsert")
@@ -44,4 +47,3 @@ which_key.register({
     q = { ":q<CR>", "Fechar" },
   },
 })
-

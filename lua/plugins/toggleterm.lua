@@ -2,11 +2,13 @@ return {
   {
     'akinsho/toggleterm.nvim',
     version = "*",
+      lazy = false, -- ⚠️ Se o Neovim ficar lento no startup, considerar reativar o lazy-loading
     config = function()
       require("toggleterm").setup({
         -- Configurações que você pode ajustar
         size = 20, -- Tamanho do terminal horizontal
-        open_mapping = [[<C-\>]], -- Atalho para abrir/fechar o terminal
+        -- open_mapping = [[<C-\>]], -- Atalho para abrir/fechar o terminal
+        -- open_mapping = [[<F4>]],
         hide_numbers = true, -- Ocultar números de linha no terminal
         shade_filetypes = {},
         shade_terminals = true,
@@ -24,6 +26,8 @@ return {
           },
         },
       })
+      -- Aqui fazemos o mapeamento manual CORRETO
+      vim.keymap.set("n", "<F4>", "<cmd>ToggleTerm<CR>", { noremap = true, silent = true })
     end,
   }
 }
