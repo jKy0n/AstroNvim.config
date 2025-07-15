@@ -4,24 +4,19 @@ return {
   lazy = false,
   version = false, -- set this if you want to always pull the latest change
   opts = {
-    -- add any opts here
-    -- ordem = prioridade. O primeiro da lista vira padrão; use <leader>a? para trocar em runtime
+    -- Ordem = prioridade. O primeiro da lista vira padrão; use <leader>a? para trocar em runtime
     providers = {
-      "openai:gpt-4o-mini",   -- ChatGPT
-      "copilot:gpt-4o"        -- Copilot como fallback
-    },
-    -- Configurações específicas de cada provedor
-    openai = {
-      model = "gpt-4o-mini",
-      timeout = 60000,
-      -- se preferir não usar variável de ambiente:
-      -- api_key_name = "OPENAI_API_KEY",
-    },
-    copilot = {
-      model = "gpt-4o",
-      timeout = 60000,
-      -- Avante busca o token no arquivo hosts.json/apps.json gerado pelo Copilot :contentReference[oaicite:2]{index=2}
-      -- Ou lê GITHUB_TOKEN/COPILOT_API_KEY se definidos
+      openai = {
+        model = "gpt-4o-mini",
+        timeout = 60000,
+        -- api_key_name = "OPENAI_API_KEY", -- opcional, se não quiser usar variável de ambiente
+      },
+      copilot = {
+        model = "gpt-4o",
+        timeout = 60000,
+        -- Avante busca o token no arquivo hosts.json/apps.json gerado pelo Copilot
+        -- Ou lê GITHUB_TOKEN/COPILOT_API_KEY se definidos
+      },
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
