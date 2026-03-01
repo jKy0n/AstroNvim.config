@@ -21,9 +21,4 @@ return {
       },
     })
   end, -- fim do codigo, sleep well
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> refs/remotes/origin/main
