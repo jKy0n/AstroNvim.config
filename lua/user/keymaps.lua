@@ -27,8 +27,8 @@ vim.keymap.set('n', '<A-u>', '<C-r>', opts)
 vim.keymap.set("n", "<S-Del>", "dd", { desc = "Delete line (Shift+Del)" })
 
 -- Apagar linha no Insert Mode (Shift+Del)
-vim.keymap.set("i", "<Esc>[99~", function()
-  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>0ddi", true, false, true), "n", true)
+vim.keymap.set("i", "<S-Del>", function()
+  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>\"_ddi", true, false, true), "n", true)
 end, { noremap = true, silent = true, desc = "Delete entire line (Shift+Del insert mode)" })
 
 -- Which-key: Atalhos Rápidos
