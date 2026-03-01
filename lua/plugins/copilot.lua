@@ -4,9 +4,21 @@ return {
   event = "InsertEnter",
   config = function()
     require("copilot").setup({
-      suggestion = { enabled = true },
-      panel = { enabled = true },
-      -- Adicione outras configurações personalizadas, se necessário
+      panel = {
+        enabled = false, -- desative o painel lateral se não usar
+      },
+      suggestion = {
+        enabled = true,
+        auto_trigger = true,        -- ativa sugestões automáticas
+        debounce = 75,              -- tempo em ms
+        keymap = {                  -- atalhos úteis
+          accept = "<Tab>",         -- aceita suggestionstion
+          accept_word = "<Right>",  -- aceita a palavra inteira
+          -- prev = "<C-[>",        -- navega entre sugestões (Anterior)
+          -- next = "<C-]>",        -- navega entre sugestões (Próxima)
+          dismiss = "<Esc>",        -- descarta a sugestão
+        },
+      },
     })
-  end,
+  end, -- fim do codigo, sleep well
 }
