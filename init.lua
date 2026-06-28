@@ -23,6 +23,6 @@ require "polish"
 
 
 
-vim.cmd.colorscheme "catppuccin-macchiato"
+vim.cmd.colorscheme "catppuccin-frappe"
 
 vim.wo.relativenumber = false
